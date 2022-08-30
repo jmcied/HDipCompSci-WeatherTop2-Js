@@ -1,11 +1,13 @@
+        
+              
 <table class="ui fixed table">
   <thead>
   <tr>
     <th>Code</th>
     <th>Temperature</th>
     <th>WindSpeed</th>
-    <th>Pressure</th>
-  
+    <th>Pressure</th>  
+    <th></th>
   </tr>
   </thead>
   <tbody>
@@ -23,7 +25,13 @@
         <td>
           {{pressure}}
         </td>
+        <td>
+          <a href="/station/{{../station.id}}/removeReading/{{id}}" class="ui icon button">
+            <i class="red icon trash"></i>
+          </a>
+        </td>
       </tr>
     {{/each}}
   </tbody>
 </table>
+              
