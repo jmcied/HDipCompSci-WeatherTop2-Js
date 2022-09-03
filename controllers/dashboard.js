@@ -1,8 +1,10 @@
 "use strict";
 
+const uuid = require('uuid');
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const analytics = require("../utils/analytics");
+
 
 const dashboard = {
   index(request, response) {
@@ -12,12 +14,6 @@ const dashboard = {
       analytics.updateWeather(station);
     }
 
-//    for (let i = 0; i < stationStore.length; i++) {
-//      const station = stationStore[i];
-
-//      station.latestWeather = stationAnalytics.latestWeather(station);
-//    }
-
     const viewData = {
       title: "WeatherTop2-JS Dashboard",
       stations: stationStore.getAllStations(),
@@ -25,6 +21,18 @@ const dashboard = {
     };
     logger.info("about to render", stationStore.getAllStations());
     response.render("dashboard", viewData);
+  },
+  
+  addStation(request, response) {
+    const newStation = {
+      id: uuid.v1(),
+      name: request.body.name,
+      lat: request.body.lat,
+      lng: request.body.lng,
+      readings:[],
+    };
+    stationStore.addStation(newStation);
+    response.redirect('/dashboard');
   },
   
   deleteStation(request, response) {

@@ -5,6 +5,7 @@ const logger = require('../utils/logger');
 const stationStore = require('../models/station-store');
 const analytics = require("../utils/analytics");
 const conversions = require("../utils/conversions");
+const uuid = require('uuid');
 
 const station = {    
   index(request, response) {
@@ -40,13 +41,15 @@ const station = {
     const stationId = request.params.id;
     const station = stationStore.getStation(stationId);
     const newReading = {
-      code: request.body.code,
-      temperature: request.body.temperature,
-      windSpeed: request.body.windSpeed,
-      windDirection: request.body.windDirection,
-      pressure: request.body.pressure,
+      id: uuid.v1(),
+      code: Number(request.body.code),
+      temperature: Number(request.body.temperature),
+      windSpeed: Number(request.body.windSpeed),
+      windDirection: Number(request.body.windDirection),
+      pressure: Number(request.body.pressure),
     };
     stationStore.addReading(stationId, newReading);
+    logger.debug('New Reading = ',newReading);
     response.redirect('/station/' + stationId);
   },
 };

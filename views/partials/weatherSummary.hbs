@@ -2,13 +2,14 @@
         <div class="ui five stackable cards">
             <div class = "card">
                  <span class="content centre">
-                <h3 class = "ui header"> {{station.title}} </h3>
+                <h3 class = "ui header"> {{station.name}} </h3>
                  </span>
               </div>
             <div class="card">
                 <span class="content centre">
                 <h3 class="ui header"> Weather
-                    <div class="sub header">{{station.code}}</div>
+                    <div class="sub header">{{station.code}}</div> 
+                    <div class="sub header">{{station.currentWeather}}</div>
                 </h3>
                 </span>
               </div>
@@ -24,6 +25,8 @@
                 <span class="content centre">
                 <h3 class="ui header"> Wind
                 <div class="sub header">{{station.windBft}} Bft</div>
+                <div class="sub header">{{station.windCompass}}</div>
+                  <div class="sub header">Feels Like: {{station.windChill}} C</div>
                 </h3>
                 </span>
             </div>

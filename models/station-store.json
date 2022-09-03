@@ -2,50 +2,103 @@
   "stationCollection": [
     {
       "id": "01",
-      "title": "Tramore",
+      "name": "Tramore",
       "readings": [
         {
           "id": "02",
           "code": 800,
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1002
+          "pressure": 1002,
+          "windDirection": 90
         },
         {
           "id": "03",
           "code": 600,
           "temperature": 6,
           "windSpeed": 2,
-          "pressure": 1004
+          "pressure": 1004,
+          "windDirection": 96
         },
         {
-          "id": "04",
-          "code": 700,
-          "temperature": 8,
-          "windSpeed": 1,
-          "pressure": 1005
+          "id": "d4f649c0-2b97-11ed-afb7-5bdf3bd5ca56",
+          "code": 800,
+          "temperature": 12,
+          "windSpeed": 34,
+          "windDirection": 234,
+          "pressure": 1122
         }
-      ]
+      ],
+      "lastReading": {
+        "id": "218d26d0-2b9a-11ed-b5f9-295edf9b1048",
+        "code": 100,
+        "temperature": 12,
+        "windSpeed": 12,
+        "windDirection": 12,
+        "pressure": 1122
+      },
+      "code": 100,
+      "tempC": 12,
+      "tempF": 53.6,
+      "pressure": 1122,
+      "windBft": 3,
+      "currentWeather": "Clear"
     },
     {
       "id": "05",
-      "title": "Dunmore",
+      "name": "Dunmore",
       "readings": [
         {
           "id": "06",
           "code": 700,
           "temperature": 8,
           "windSpeed": 1,
-          "pressure": 999
+          "pressure": 999,
+          "windDirection": 98
         },
         {
           "id": "07",
           "code": 200,
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1000
+          "pressure": 1000,
+          "windDirection": 102
         }
-      ]
+      ],
+      "lastReading": {
+        "id": "07",
+        "code": 200,
+        "temperature": 0.5,
+        "windSpeed": 3.5,
+        "pressure": 1000,
+        "windDirection": 102
+      },
+      "code": 200,
+      "tempC": 0.5,
+      "tempF": 32.9,
+      "pressure": 1000,
+      "windBft": 1,
+      "currentWeather": "Partial Clouds"
+    },
+    {
+      "id": "2abe8b20-2b97-11ed-851d-3d7062d304f5",
+      "name": "Hook Head",
+      "lat": "12",
+      "lng": "34",
+      "readings": [],
+      "lastReading": {
+        "id": "3321e9b0-2b97-11ed-851d-3d7062d304f5",
+        "code": "100",
+        "temperature": "5",
+        "windSpeed": "12",
+        "windDirection": "11",
+        "pressure": "1122"
+      },
+      "code": "100",
+      "tempC": "5",
+      "tempF": 41,
+      "pressure": "1122",
+      "windBft": 3
     }
   ]
 }
