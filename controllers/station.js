@@ -3,12 +3,17 @@
 
 const logger = require('../utils/logger');
 const stationStore = require('../models/station-store');
-const stationAnalytics = require("../utils/stationAnalytics");
+const analytics = require("../utils/analytics");
+const conversions = require("../utils/conversions");
 
 const station = {    
   index(request, response) {
     const stationId = request.params.id;
     logger.info('Station id = ' + stationId);
+    
+       for(const station of stationStore.getAllStations()){
+      analytics.updateWeather(station);
+    }
     
 //    if (station.readings.length > 0){
 //      const latestReading = stationAnalytics.getLatestReading(station);

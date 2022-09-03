@@ -8,28 +8,29 @@
             <div class="card">
                 <span class="content centre">
                 <h3 class="ui header"> Weather
-                    <div class="sub header">{{code}}</div>
+                    <div class="sub header">{{station.code}}</div>
                 </h3>
                 </span>
               </div>
             <div class="card">
                 <span class="content centre">
-                <h3 class="ui header"> Temp
-                <div class="sub header">{{temperature}}</div>
+                <h3 class="ui header"> Temperature
+                <div class="sub header">{{station.tempC}} C</div>
+                  <div class="sub header">{{station.tempF}} F</div>
                 </h3>
                 </span>
             </div>
           <div class="card">
                 <span class="content centre">
                 <h3 class="ui header"> Wind
-                <div class="sub header">{{windSpeed}}</div>
+                <div class="sub header">{{station.windBft}} Bft</div>
                 </h3>
                 </span>
             </div>
           <div class="card">
                 <span class="content centre">
                 <h3 class="ui header"> Pressure
-                <div class="sub header">{{pressure}}</div>
+                <div class="sub header">{{station.pressure}} hpa</div>
                 </h3>
                 </span>
             </div>
