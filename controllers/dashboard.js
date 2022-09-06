@@ -10,7 +10,8 @@ const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     
-    for(const station of stationStore.getAllStations()){
+    for(const station of stationStore.getAllStations()){      //
+      console.log("STATION FOUND: ", station)
       analytics.updateWeather(station);
     }
 

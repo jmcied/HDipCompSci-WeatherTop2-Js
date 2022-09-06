@@ -1,29 +1,46 @@
 "use strict";
 
+
 const stationStore = require("../models/station-store");
 const analytics = require("../utils/analytics");
 
 const conversions = {
   currentWeather(code) {
-      if (code == 100) {
-      return "Clear";
-    } else if (code == 200) {
-      return "Partial Clouds";
-    } else if (code == 300) {
-      return "Cloudy";
-    } else if (code == 400) {
-      return "Light Showers";
-    } else if (code == 500) {
-      return "Heavy Showers";
-    } else if (code == 600) {
-      return "Rain";
-    } else if (code == 700) {
-      return "Snow";
-    } else if (code == 800) {
-      return "Thunder";
+      switch (code) {
+        case 100:
+          return "Clear";
+        case 200:
+          return "Partial clouds";
+        case 300:
+          return "Cloudy";
+        case 400:
+          return "Light Showers";
+        case 500:
+          return "Heavy Showers";
+        case 600:
+          return "Rain";
+        case 700:
+          return "Snow";
+        case 800:
+          return "Thunder";
       }
-    else
-      return "Invalid Entry";       
+      return null;       
+  },
+  
+  weatherIcons(code) {                    //take in code value and sets to string value i.e. weather description
+    const weatherIcons = new Map()
+    
+    weatherIcons.set(100, "sun icon");
+    weatherIcons.set(200, "cloud sun icon");
+    weatherIcons.set(300, "cloud icon");
+    weatherIcons.set(400, "cloud rain icon");
+    weatherIcons.set(500, "cloud heavy showers icon");
+    weatherIcons.set(600, "umbrella icon");
+    weatherIcons.set(700, "snowflake icon");
+    weatherIcons.set(800, "poo storm icon");
+
+    return weatherIcons.get(code);
+      
   },
 
   calcBeafourt(windSpeed) {

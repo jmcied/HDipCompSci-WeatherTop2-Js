@@ -3,6 +3,8 @@
     {
       "id": "01",
       "name": "Tramore",
+      "lat": "59.09",
+      "lng": "-7.09",
       "readings": [
         {
           "id": "02",
@@ -21,32 +23,59 @@
           "windDirection": 96
         },
         {
-          "id": "d4f649c0-2b97-11ed-afb7-5bdf3bd5ca56",
+          "id": "ef11e5d0-2e12-11ed-9704-cd3324ded345",
           "code": 800,
-          "temperature": 12,
-          "windSpeed": 34,
+          "temperature": 1,
+          "windSpeed": 1,
+          "windDirection": 1,
+          "pressure": 1122
+        },
+        {
+          "id": "3d7ba390-2e14-11ed-9704-cd3324ded345",
+          "code": 100,
+          "temperature": 1,
+          "windSpeed": 1,
+          "windDirection": 1,
+          "pressure": 1122
+        },
+        {
+          "id": "542c5ad0-2e14-11ed-b322-b5cb968cf1d6",
+          "code": 200,
+          "temperature": 1,
+          "windSpeed": 1,
           "windDirection": 234,
           "pressure": 1122
         }
       ],
       "lastReading": {
-        "id": "218d26d0-2b9a-11ed-b5f9-295edf9b1048",
+        "id": "3d7ba390-2e14-11ed-9704-cd3324ded345",
         "code": 100,
-        "temperature": 12,
-        "windSpeed": 12,
-        "windDirection": 12,
+        "temperature": 1,
+        "windSpeed": 1,
+        "windDirection": 1,
         "pressure": 1122
       },
       "code": 100,
-      "tempC": 12,
-      "tempF": 53.6,
+      "tempC": 1,
+      "tempF": 33.8,
       "pressure": 1122,
-      "windBft": 3,
-      "currentWeather": "Clear"
+      "windBft": 1,
+      "currentWeather": "Clear",
+      "maxTemp": 6,
+      "minTemp": 0.5,
+      "windCompass": "North",
+      "windChill": 3,
+      "maxWind": 3.5,
+      "minWind": 1,
+      "maxPressure": 1122,
+      "minPressure": 1002,
+      "weatherIcons": "sun icon"
     },
     {
       "id": "05",
       "name": "Dunmore",
+      "lat": "52.149",
+      "lng": "-6.994",
       "readings": [
         {
           "id": "06",
@@ -78,27 +107,63 @@
       "tempF": 32.9,
       "pressure": 1000,
       "windBft": 1,
-      "currentWeather": "Partial Clouds"
+      "currentWeather": "Partial clouds",
+      "maxTemp": 8,
+      "minTemp": 0.5,
+      "windCompass": "East South East",
+      "windChill": 0,
+      "maxWind": 3.5,
+      "minWind": 1,
+      "maxPressure": 1000,
+      "minPressure": 999,
+      "weatherIcons": "cloud sun icon"
     },
     {
       "id": "2abe8b20-2b97-11ed-851d-3d7062d304f5",
       "name": "Hook Head",
       "lat": "12",
       "lng": "34",
-      "readings": [],
+      "readings": [
+        {
+          "id": "f7e07cb0-2c7a-11ed-87b1-8d597e77642c",
+          "code": 400,
+          "temperature": 3,
+          "windSpeed": 9,
+          "windDirection": 234,
+          "pressure": 1100
+        },
+        {
+          "id": "04f35990-2c7b-11ed-87b1-8d597e77642c",
+          "code": 200,
+          "temperature": 7,
+          "windSpeed": 5,
+          "windDirection": 200,
+          "pressure": 1100
+        }
+      ],
       "lastReading": {
-        "id": "3321e9b0-2b97-11ed-851d-3d7062d304f5",
-        "code": "100",
-        "temperature": "5",
-        "windSpeed": "12",
-        "windDirection": "11",
-        "pressure": "1122"
+        "id": "04f35990-2c7b-11ed-87b1-8d597e77642c",
+        "code": 200,
+        "temperature": 7,
+        "windSpeed": 5,
+        "windDirection": 200,
+        "pressure": 1100
       },
-      "code": "100",
-      "tempC": "5",
-      "tempF": 41,
-      "pressure": "1122",
-      "windBft": 3
+      "code": 200,
+      "tempC": 7,
+      "tempF": 44.6,
+      "pressure": 1100,
+      "windBft": 1,
+      "currentWeather": "Partial clouds",
+      "maxTemp": 7,
+      "minTemp": 3,
+      "windCompass": "South South West",
+      "windChill": 6,
+      "maxWind": 9,
+      "minWind": 5,
+      "maxPressure": 1100,
+      "minPressure": 1100,
+      "weatherIcons": "cloud sun icon"
     }
   ]
 }
