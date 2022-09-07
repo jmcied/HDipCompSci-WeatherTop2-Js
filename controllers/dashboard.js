@@ -1,17 +1,17 @@
 "use strict";
 
-const uuid = require('uuid');
+const uuid = require("uuid");
 const logger = require("../utils/logger");
 const stationStore = require("../models/station-store");
 const analytics = require("../utils/analytics");
 
-
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
-    
-    for(const station of stationStore.getAllStations()){      //
-      console.log("STATION FOUND: ", station)
+
+    for (const station of stationStore.getAllStations()) {
+      //
+      console.log("STATION FOUND: ", station);
       analytics.updateWeather(station);
     }
 
@@ -23,25 +23,25 @@ const dashboard = {
     logger.info("about to render", stationStore.getAllStations());
     response.render("dashboard", viewData);
   },
-  
+
   addStation(request, response) {
     const newStation = {
       id: uuid.v1(),
       name: request.body.name,
       lat: request.body.lat,
       lng: request.body.lng,
-      readings:[],
+      readings: [],
     };
     stationStore.addStation(newStation);
-    response.redirect('/dashboard');
+    response.redirect("/dashboard");
   },
-  
+
   deleteStation(request, response) {
     const stationId = request.params.id;
-    logger.info('Deleting Station ${stationId}');
+    logger.info("Deleting Station ${stationId}");
     stationStore.removeStation(stationId);
-    response.redirect('/dashboard');
-  }
+    response.redirect("/dashboard");
+  },
 };
 
 module.exports = dashboard;

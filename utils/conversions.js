@@ -1,35 +1,35 @@
 "use strict";
 
-
 const stationStore = require("../models/station-store");
 const analytics = require("../utils/analytics");
 
 const conversions = {
   currentWeather(code) {
-      switch (code) {
-        case 100:
-          return "Clear";
-        case 200:
-          return "Partial clouds";
-        case 300:
-          return "Cloudy";
-        case 400:
-          return "Light Showers";
-        case 500:
-          return "Heavy Showers";
-        case 600:
-          return "Rain";
-        case 700:
-          return "Snow";
-        case 800:
-          return "Thunder";
-      }
-      return null;       
+    switch (code) {
+      case 100:
+        return "Clear";
+      case 200:
+        return "Partial clouds";
+      case 300:
+        return "Cloudy";
+      case 400:
+        return "Light Showers";
+      case 500:
+        return "Heavy Showers";
+      case 600:
+        return "Rain";
+      case 700:
+        return "Snow";
+      case 800:
+        return "Thunder";
+    }
+    return null;
   },
-  
-  weatherIcons(code) {                    //take in code value and sets to string value i.e. weather description
-    const weatherIcons = new Map()
-    
+
+  weatherIcons(code) {
+    //take in code value and sets to string value i.e. weather description
+    const weatherIcons = new Map();
+
     weatherIcons.set(100, "sun icon");
     weatherIcons.set(200, "cloud sun icon");
     weatherIcons.set(300, "cloud icon");
@@ -40,7 +40,6 @@ const conversions = {
     weatherIcons.set(800, "poo storm icon");
 
     return weatherIcons.get(code);
-      
   },
 
   calcBeafourt(windSpeed) {
@@ -73,9 +72,10 @@ const conversions = {
     }
     return -1;
   },
-  
-  degreesToCompass(deg) {                         //converts number deg value to string compass value
-      if (deg > 11.25 && deg <= 33.75) {
+
+  degreesToCompass(deg) {
+    //converts number deg value to string compass value
+    if (deg > 11.25 && deg <= 33.75) {
       return "North North East";
     } else if (deg > 33.75 && deg <= 56.25) {
       return "East North East";

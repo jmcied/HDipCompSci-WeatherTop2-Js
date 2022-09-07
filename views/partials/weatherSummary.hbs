@@ -1,52 +1,52 @@
-<div class = "ui inverted blue segment">  
-        <div class="ui five stackable cards">
-            <div class = "card">
-                 <div class="ui purple header content">
-                   <i class="right floated huge location arrow icon"></i>
-                   <h2>{{station.name}} </h2>
-                   <div class = "sub header"> Lat: {{station.lat}} </div>
-                   <div class = "sub header"> Lng: {{station.lng}} </div>
-              </div>
-              </div>
-            <div class="card">              
-                <div class="ui red header content centre">   
-                  <i class = "right floated huge red {{station.weatherIcons}}"></i>
-                  <h2> Weather </h2> 
-                   
-                <!--    <div class="sub header">{{station.code}}</div> -->
-                    <div class="sub header">{{station.currentWeather}}</div>  
-                  
-                </div>
-              </div>
-            <div class="card">
-                <div class="ui grey header content centre">  
-                  <i class="right floated huge temperature low icon"></i>
-                  <h2> Temp </h2>
-                <div class="sub header">{{station.tempC}} &degC</div>
-                  <div class="sub header">{{station.tempF}} &degF</div>
-                  <div class="sub header">Max: {{station.maxTemp}} &degC</div>
-                   <div class="sub header">Min: {{station.minTemp}} &degC</div>                
-                </div>
-            </div>
-          <div class="card">
-                <div class="ui green header content centre">
-                  <i class="right floated huge wind icon"></i>
-                  <h2> Wind </h2>
-                <div class="sub header">{{station.windBft}} Bft</div>
-                <div class="sub header">{{station.windCompass}}</div>
-                  <div class="sub header">Feels Like: {{station.windChill}} &degC</div>
-                  <div class="sub header">Max: {{station.maxWind}} km/h</div>
-                  <div class="sub header">Min: {{station.minWind}} km/h</div>                
-                </div>
-            </div>
-          <div class="card">
-                <div class="ui orange header content centre">
-                  <i class="right floated huge bullseye icon"></i>
-                  <h2> Pressure </h2>
-                <div class="sub header">{{station.pressure}} hpa</div>  
-                  <div class="sub header">Max: {{station.maxPressure}} hpa</div>  
-                  <div class="sub header">Min: {{station.minPressure}} hpa</div>  
-                </div>
-            </div>
-        </div>
+<div class="ui inverted blue segment">
+  <div class="ui five stackable cards">
+    <div class="card">
+      <div class="ui purple header content">
+        <i class="right floated huge location arrow icon"></i>
+        <h2>{{station.name}} </h2>
+        <div class="sub header"> Lat: {{station.lat}} </div>
+        <div class="sub header"> Lng: {{station.lng}} </div>
+      </div>
     </div>
+    <div class="card">
+      <div class="ui red header content centre">
+        <i class="right floated huge red {{station.weatherIcons}}"></i>
+        <h2> Weather </h2>
+
+        <!--    <div class="sub header">{{station.code}}</div> -->
+        <div class="sub header">{{station.currentWeather}}</div>
+
+      </div>
+    </div>
+    <div class="card">
+      <div class="ui grey header content centre">
+        <i class="right floated huge temperature low icon"></i>
+        <h2> Temp </h2>
+        <div class="sub header">{{station.tempC}} &degC</div>
+        <div class="sub header">{{station.tempF}} &degF</div>
+        <div class="sub header">Max: {{station.maxTemp}} &degC</div>
+        <div class="sub header">Min: {{station.minTemp}} &degC</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="ui green header content centre">
+        <i class="right floated huge wind icon"></i>
+        <h2> Wind </h2>
+        <div class="sub header">{{station.windBft}} Bft</div>
+        <div class="sub header">{{station.windCompass}}</div>
+        <div class="sub header">Feels Like: {{station.windChill}} &degC</div>
+        <div class="sub header">Max: {{station.maxWind}} km/h</div>
+        <div class="sub header">Min: {{station.minWind}} km/h</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="ui orange header content centre">
+        <i class="right floated huge bullseye icon"></i>
+        <h2> Pressure </h2>
+        <div class="sub header">{{station.pressure}} hpa</div>
+        <div class="sub header">Max: {{station.maxPressure}} hpa</div>
+        <div class="sub header">Min: {{station.minPressure}} hpa</div>
+      </div>
+    </div>
+  </div>
+</div>
