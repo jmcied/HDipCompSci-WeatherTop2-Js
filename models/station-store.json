@@ -2,50 +2,168 @@
   "stationCollection": [
     {
       "id": "01",
-      "title": "Tramore",
+      "name": "Tramore",
+      "lat": "59.09",
+      "lng": "-7.09",
       "readings": [
         {
           "id": "02",
           "code": 800,
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1002
+          "pressure": 1002,
+          "windDirection": 90
         },
         {
           "id": "03",
           "code": 600,
           "temperature": 6,
           "windSpeed": 2,
-          "pressure": 1004
+          "pressure": 1004,
+          "windDirection": 96
         },
         {
-          "id": "04",
-          "code": 700,
-          "temperature": 8,
+          "id": "ef11e5d0-2e12-11ed-9704-cd3324ded345",
+          "code": 800,
+          "temperature": 1,
           "windSpeed": 1,
-          "pressure": 1005
+          "windDirection": 1,
+          "pressure": 1122
+        },
+        {
+          "id": "3d7ba390-2e14-11ed-9704-cd3324ded345",
+          "code": 100,
+          "temperature": 1,
+          "windSpeed": 1,
+          "windDirection": 1,
+          "pressure": 1122
+        },
+        {
+          "id": "542c5ad0-2e14-11ed-b322-b5cb968cf1d6",
+          "code": 200,
+          "temperature": 1,
+          "windSpeed": 1,
+          "windDirection": 234,
+          "pressure": 1122
         }
-      ]
+      ],
+      "lastReading": {
+        "id": "3d7ba390-2e14-11ed-9704-cd3324ded345",
+        "code": 100,
+        "temperature": 1,
+        "windSpeed": 1,
+        "windDirection": 1,
+        "pressure": 1122
+      },
+      "code": 100,
+      "tempC": 1,
+      "tempF": 33.8,
+      "pressure": 1122,
+      "windBft": 1,
+      "currentWeather": "Clear",
+      "maxTemp": 6,
+      "minTemp": 0.5,
+      "windCompass": "North",
+      "windChill": 3,
+      "maxWind": 3.5,
+      "minWind": 1,
+      "maxPressure": 1122,
+      "minPressure": 1002,
+      "weatherIcons": "sun icon"
     },
     {
       "id": "05",
-      "title": "Dunmore",
+      "name": "Dunmore",
+      "lat": "52.149",
+      "lng": "-6.994",
       "readings": [
         {
           "id": "06",
           "code": 700,
           "temperature": 8,
           "windSpeed": 1,
-          "pressure": 999
+          "pressure": 999,
+          "windDirection": 98
         },
         {
           "id": "07",
           "code": 200,
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1000
+          "pressure": 1000,
+          "windDirection": 102
         }
-      ]
+      ],
+      "lastReading": {
+        "id": "07",
+        "code": 200,
+        "temperature": 0.5,
+        "windSpeed": 3.5,
+        "pressure": 1000,
+        "windDirection": 102
+      },
+      "code": 200,
+      "tempC": 0.5,
+      "tempF": 32.9,
+      "pressure": 1000,
+      "windBft": 1,
+      "currentWeather": "Partial clouds",
+      "maxTemp": 8,
+      "minTemp": 0.5,
+      "windCompass": "East South East",
+      "windChill": 0,
+      "maxWind": 3.5,
+      "minWind": 1,
+      "maxPressure": 1000,
+      "minPressure": 999,
+      "weatherIcons": "cloud sun icon"
+    },
+    {
+      "id": "2abe8b20-2b97-11ed-851d-3d7062d304f5",
+      "name": "Hook Head",
+      "lat": "12",
+      "lng": "34",
+      "readings": [
+        {
+          "id": "f7e07cb0-2c7a-11ed-87b1-8d597e77642c",
+          "code": 400,
+          "temperature": 3,
+          "windSpeed": 9,
+          "windDirection": 234,
+          "pressure": 1100
+        },
+        {
+          "id": "04f35990-2c7b-11ed-87b1-8d597e77642c",
+          "code": 200,
+          "temperature": 7,
+          "windSpeed": 5,
+          "windDirection": 200,
+          "pressure": 1100
+        }
+      ],
+      "lastReading": {
+        "id": "04f35990-2c7b-11ed-87b1-8d597e77642c",
+        "code": 200,
+        "temperature": 7,
+        "windSpeed": 5,
+        "windDirection": 200,
+        "pressure": 1100
+      },
+      "code": 200,
+      "tempC": 7,
+      "tempF": 44.6,
+      "pressure": 1100,
+      "windBft": 1,
+      "currentWeather": "Partial clouds",
+      "maxTemp": 7,
+      "minTemp": 3,
+      "windCompass": "South South West",
+      "windChill": 6,
+      "maxWind": 9,
+      "minWind": 5,
+      "maxPressure": 1100,
+      "minPressure": 1100,
+      "weatherIcons": "cloud sun icon"
     }
   ]
 }
