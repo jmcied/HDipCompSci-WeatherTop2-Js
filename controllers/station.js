@@ -9,19 +9,15 @@ const uuid = require("uuid");
 const station = {
   index(request, response) {
     const stationId = request.params.id;
-    logger.info("Station id = " + stationId);
+    logger.info("Station id = " + stationId);       
 
     for (const station of stationStore.getAllStations()) {
       analytics.updateWeather(station);
     }
 
-    //    if (station.readings.length > 0){
-    //      const latestReading = stationAnalytics.getLatestReading(station);
-
     const viewData = {
       title: "Station",
-      station: stationStore.getStation(stationId),
-      //      latestReading: latestReading,
+      station: stationStore.getStation(stationId),    
     };
     logger.info("about to render", stationStore.getStation(stationId));
     response.render("station", viewData);
@@ -45,6 +41,7 @@ const station = {
       windSpeed: Number(request.body.windSpeed),
       windDirection: Number(request.body.windDirection),
       pressure: Number(request.body.pressure),
+      date: new Date(),
     };
     stationStore.addReading(stationId, newReading);
     logger.debug("New Reading = ", newReading);

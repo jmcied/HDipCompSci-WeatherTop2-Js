@@ -9,7 +9,9 @@ const stationStore = {
   }),
   collection: "stationCollection",
 
-  //stationCollection: require('./station-store.json').stationCollection,
+  getUserStations(userid) {
+    return this.store.findBy(this.collection, { userid: userid} );
+  },
 
   getAllStations() {
     return this.store.findAll(this.collection);
@@ -47,34 +49,21 @@ const stationStore = {
     _.remove(station.readings, { id: readingId });
     this.store.save();
   },
+  
+  getReading(id, readingId) {
+    const station = this.store.findOneBy(this.collection, { id: id });
+    const readings = station.readings.filter(reading => reading.id == readingId);
+    return readings[0];
+  },
+
+  updateReading(reading, updatedReading) {
+    reading.code = updatedReading.code;
+    reading.temperature = updatedReading.temperature;
+    reading.windSpeed = updatedReading.windSpeed;
+    reading.windDirection = updatedReading.windDirection;
+    reading.pressure = updatedReading.pressure;
+    this.store.save();
+  }
 };
 
 module.exports = stationStore;
-
-/*  getAllStations() {
-    return this.stationCollection;
-  },
-
-  getStation(id) {
-   return _.find(this.stationCollection, {id:id});
-  },
-  
-  removeReading(id, readingId) {
-    const station = this.getStation(id);
-    _.remove(station.readings, {id: readingId})
-  },
-  
-  removeStation(id) {
-    _.remove(this.stationCollection, {id: id});
-  },
-  
-  addStation(station) {
-    this.stationCollection.push(station);
-  },
-  
-  addReading(id, reading) {
-    const station = this.getStation(id);
-    station.readings.push(reading);
-  }
-};
-*/

@@ -3,8 +3,8 @@
 const stationStore = require("../models/station-store");
 const analytics = require("../utils/analytics");
 
-const conversions = {
-  currentWeather(code) {
+const conversions = { 
+  currentWeather(code) {                              //switch statements taking in code number value returning string description
     switch (code) {
       case 100:
         return "Clear";
@@ -26,8 +26,7 @@ const conversions = {
     return null;
   },
 
-  weatherIcons(code) {
-    //take in code value and sets to string value i.e. weather description
+  weatherIcons(code) {            //take in code value and sets to string value i.e. weather description to be used to display image
     const weatherIcons = new Map();
 
     weatherIcons.set(100, "sun icon");
@@ -42,7 +41,7 @@ const conversions = {
     return weatherIcons.get(code);
   },
 
-  calcBeafourt(windSpeed) {
+  calcBeafourt(windSpeed) {                              //WindSpeed Calculation
     if (windSpeed == 0) {
       return 0;
     } else if (windSpeed >= 1 && windSpeed <= 6) {
@@ -73,8 +72,7 @@ const conversions = {
     return -1;
   },
 
-  degreesToCompass(deg) {
-    //converts number deg value to string compass value
+  degreesToCompass(deg) {                          //converts number deg value to string compass value
     if (deg > 11.25 && deg <= 33.75) {
       return "North North East";
     } else if (deg > 33.75 && deg <= 56.25) {
