@@ -1,9 +1,12 @@
+{{> menu}}
+
 <form  
       class="ui stacked segment form"
-  action="/station/{{station.id}}/addReading"
+  action="/reading/{{station.id}}/updateReading/{{reading.id}}"
   method="POST"
 >
-  <label class="ui blue header"><h3>Add New Reading</h3></label>
+  
+  <label class="ui blue header"><h3>Update Existing Reading</h3></label>
   <div class="five fields">
     <div class="field">
       <label>Weather Code</label>
@@ -24,8 +27,8 @@
       <input
         placeholder="0.0c"
         type="number"
-        name="temperature"
-        required="required"
+        name="temperature" 
+        required="required"     
         min="-20"
         max="50"
         step="0.1"
@@ -36,7 +39,7 @@
       <input
         placeholder="0.0kMh"
         type="number"
-        name="windSpeed"
+        name="windSpeed"        
         required="required"
         min="0"
         max="200"
@@ -48,8 +51,8 @@
       <input
         placeholder="000deg"
         type="number"
-        name="windDirection"
-        required="required"
+        name="windDirection" 
+        required="required"     
         min="0"
         max="360"
         step="0.01"
@@ -60,13 +63,13 @@
       <input
         placeholder="0000hPa"
         type="number"
-        name="pressure"
-        required="required"
+        name="pressure" 
+        required="required"     
         min="900"
         max="1200"
         step="1"
       />
     </div>
   </div>
-  <button class="ui blue submit button">Submit Report</button>
+  <button class="ui blue submit button">Update Report</button>
 </form>

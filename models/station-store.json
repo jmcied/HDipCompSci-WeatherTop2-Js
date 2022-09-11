@@ -1,169 +1,301 @@
 {
   "stationCollection": [
     {
-      "id": "01",
-      "name": "Tramore",
-      "lat": "59.09",
-      "lng": "-7.09",
+      "id": "79b5df90-31fe-11ed-95d5-5920b316d4fe",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "a Homer station",
+      "lat": "23.45",
+      "lng": "45.23",
       "readings": [
         {
-          "id": "02",
+          "id": "89ea6ed0-31fe-11ed-95d5-5920b316d4fe",
           "code": 800,
-          "temperature": 0.5,
-          "windSpeed": 3.5,
-          "pressure": 1002,
-          "windDirection": 90
+          "temperature": 5,
+          "windSpeed": 6,
+          "windDirection": 7,
+          "pressure": 1200,
+          "date": "2022-09-11T18:21:22.365Z"
         },
         {
-          "id": "03",
-          "code": 600,
-          "temperature": 6,
-          "windSpeed": 2,
-          "pressure": 1004,
-          "windDirection": 96
-        },
-        {
-          "id": "ef11e5d0-2e12-11ed-9704-cd3324ded345",
-          "code": 800,
-          "temperature": 1,
-          "windSpeed": 1,
-          "windDirection": 1,
-          "pressure": 1122
-        },
-        {
-          "id": "3d7ba390-2e14-11ed-9704-cd3324ded345",
-          "code": 100,
-          "temperature": 1,
-          "windSpeed": 1,
-          "windDirection": 1,
-          "pressure": 1122
-        },
-        {
-          "id": "542c5ad0-2e14-11ed-b322-b5cb968cf1d6",
-          "code": 200,
-          "temperature": 1,
-          "windSpeed": 1,
+          "id": "9ed05120-31fe-11ed-95d5-5920b316d4fe",
+          "code": 500,
+          "temperature": 7,
+          "windSpeed": 8,
           "windDirection": 234,
-          "pressure": 1122
+          "pressure": 999,
+          "date": "2022-09-11T18:21:57.426Z"
+        },
+        {
+          "id": "aca349b0-31fe-11ed-95d5-5920b316d4fe",
+          "code": 100,
+          "temperature": 12,
+          "windSpeed": 15,
+          "windDirection": 100,
+          "pressure": 900,
+          "date": "2022-09-11T18:22:20.619Z"
         }
       ],
       "lastReading": {
-        "id": "3d7ba390-2e14-11ed-9704-cd3324ded345",
+        "id": "aca349b0-31fe-11ed-95d5-5920b316d4fe",
         "code": 100,
-        "temperature": 1,
-        "windSpeed": 1,
-        "windDirection": 1,
-        "pressure": 1122
+        "temperature": 12,
+        "windSpeed": 15,
+        "windDirection": 100,
+        "pressure": 900,
+        "date": "2022-09-11T18:22:20.619Z"
       },
       "code": 100,
-      "tempC": 1,
-      "tempF": 33.8,
-      "pressure": 1122,
-      "windBft": 1,
       "currentWeather": "Clear",
-      "maxTemp": 6,
-      "minTemp": 0.5,
-      "windCompass": "North",
-      "windChill": 3,
-      "maxWind": 3.5,
-      "minWind": 1,
-      "maxPressure": 1122,
-      "minPressure": 1002,
-      "weatherIcons": "sun icon"
-    },
-    {
-      "id": "05",
-      "name": "Dunmore",
-      "lat": "52.149",
-      "lng": "-6.994",
-      "readings": [
-        {
-          "id": "06",
-          "code": 700,
-          "temperature": 8,
-          "windSpeed": 1,
-          "pressure": 999,
-          "windDirection": 98
-        },
-        {
-          "id": "07",
-          "code": 200,
-          "temperature": 0.5,
-          "windSpeed": 3.5,
-          "pressure": 1000,
-          "windDirection": 102
-        }
-      ],
-      "lastReading": {
-        "id": "07",
-        "code": 200,
-        "temperature": 0.5,
-        "windSpeed": 3.5,
-        "pressure": 1000,
-        "windDirection": 102
-      },
-      "code": 200,
-      "tempC": 0.5,
-      "tempF": 32.9,
-      "pressure": 1000,
-      "windBft": 1,
-      "currentWeather": "Partial clouds",
-      "maxTemp": 8,
-      "minTemp": 0.5,
+      "weatherIcons": "sun icon",
+      "tempC": 12,
+      "tempF": 53.6,
+      "maxTemp": 12,
+      "minTemp": 5,
+      "tempTrend": "right floated big arrow up icon",
+      "windBft": 3,
       "windCompass": "East South East",
-      "windChill": 0,
-      "maxWind": 3.5,
-      "minWind": 1,
-      "maxPressure": 1000,
-      "minPressure": 999,
-      "weatherIcons": "cloud sun icon"
+      "windChill": 10,
+      "maxWind": 15,
+      "minWind": 6,
+      "windTrend": "right floated big arrow up icon",
+      "pressure": 900,
+      "maxPressure": 1200,
+      "minPressure": 900,
+      "pressureTrend": "right floated big arrow down icon"
     },
     {
-      "id": "2abe8b20-2b97-11ed-851d-3d7062d304f5",
-      "name": "Hook Head",
-      "lat": "12",
-      "lng": "34",
+      "id": "c0fb43e0-31fe-11ed-95d5-5920b316d4fe",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "bart station",
+      "lat": "45.54",
+      "lng": "67.9",
       "readings": [
         {
-          "id": "f7e07cb0-2c7a-11ed-87b1-8d597e77642c",
-          "code": 400,
-          "temperature": 3,
-          "windSpeed": 9,
-          "windDirection": 234,
-          "pressure": 1100
+          "id": "cfa636d0-3207-11ed-8db8-a3274c0a00c1",
+          "code": 100,
+          "temperature": 5,
+          "windSpeed": 3,
+          "windDirection": 100,
+          "pressure": 1200,
+          "date": "2022-09-11T19:27:44.830Z"
         },
         {
-          "id": "04f35990-2c7b-11ed-87b1-8d597e77642c",
+          "id": "da143270-3207-11ed-8db8-a3274c0a00c1",
           "code": 200,
           "temperature": 7,
-          "windSpeed": 5,
-          "windDirection": 200,
-          "pressure": 1100
+          "windSpeed": 6,
+          "windDirection": 234,
+          "pressure": 1100,
+          "date": "2022-09-11T19:28:02.327Z"
         }
       ],
       "lastReading": {
-        "id": "04f35990-2c7b-11ed-87b1-8d597e77642c",
+        "id": "da143270-3207-11ed-8db8-a3274c0a00c1",
         "code": 200,
         "temperature": 7,
-        "windSpeed": 5,
-        "windDirection": 200,
-        "pressure": 1100
+        "windSpeed": 6,
+        "windDirection": 234,
+        "pressure": 1100,
+        "date": "2022-09-11T19:28:02.327Z"
       },
       "code": 200,
+      "currentWeather": "Partial clouds",
+      "weatherIcons": "cloud sun icon",
       "tempC": 7,
       "tempF": 44.6,
-      "pressure": 1100,
-      "windBft": 1,
-      "currentWeather": "Partial clouds",
       "maxTemp": 7,
-      "minTemp": 3,
-      "windCompass": "South South West",
+      "minTemp": 5,
+      "tempTrend": null,
+      "windBft": 1,
+      "windCompass": "South West",
       "windChill": 6,
-      "maxWind": 9,
-      "minWind": 5,
-      "maxPressure": 1100,
+      "maxWind": 6,
+      "minWind": 3,
+      "windTrend": null,
+      "pressure": 1100,
+      "maxPressure": 1200,
       "minPressure": 1100,
-      "weatherIcons": "cloud sun icon"
+      "pressureTrend": null
+    },
+    {
+      "id": "7e24b1d0-2ed1-11ed-a0ea-6bd3684841ad",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Hook Head",
+      "lat": "",
+      "lng": "",
+      "readings": [
+        {
+          "id": "c506a810-2f8f-11ed-8a4a-959db4577b9f",
+          "code": 600,
+          "temperature": 12,
+          "windSpeed": 34,
+          "windDirection": 56,
+          "pressure": 1100,
+          "date": "2022-09-08T16:03:25.073Z"
+        },
+        {
+          "id": "d25c8160-2f8f-11ed-8a4a-959db4577b9f",
+          "code": 300,
+          "temperature": 5,
+          "windSpeed": 20,
+          "windDirection": 78,
+          "pressure": 1100,
+          "date": "2022-09-08T16:03:47.446Z"
+        },
+        {
+          "id": "19890680-2f90-11ed-8a4a-959db4577b9f",
+          "code": 300,
+          "temperature": 5.5,
+          "windSpeed": 12,
+          "windDirection": 234,
+          "pressure": 950,
+          "date": "2022-09-08T16:05:46.856Z"
+        },
+        {
+          "id": "fed14b50-2fa2-11ed-a7b8-1f3aaaebfb48",
+          "code": 400,
+          "temperature": 6,
+          "windSpeed": 11,
+          "windDirection": 360,
+          "pressure": 900,
+          "date": "2022-09-08T18:21:02.472Z"
+        }
+      ],
+      "lastReading": {
+        "id": "fed14b50-2fa2-11ed-a7b8-1f3aaaebfb48",
+        "code": 400,
+        "temperature": 6,
+        "windSpeed": 11,
+        "windDirection": 360,
+        "pressure": 900,
+        "date": "2022-09-08T18:21:02.472Z"
+      },
+      "code": 400,
+      "currentWeather": "Light Showers",
+      "weatherIcons": "cloud rain icon",
+      "tempC": 6,
+      "tempF": 42.8,
+      "maxTemp": 12,
+      "minTemp": 5,
+      "tempTrend": "right floated big arrow up icon",
+      "windBft": 2,
+      "windCompass": "North",
+      "windChill": 4,
+      "maxWind": 34,
+      "minWind": 11,
+      "pressure": 900,
+      "maxPressure": 1100,
+      "minPressure": 900,
+      "windTrend": "right floated big arrow down icon",
+      "pressureTrend": "right floated big arrow down icon"
+    },
+    {
+      "id": "f449b8a0-2eaf-11ed-9b61-895878c90fae",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "lisa station",
+      "lat": "",
+      "lng": "",
+      "readings": [
+        {
+          "id": "cfdf4600-31f8-11ed-b265-43c1ba8087e7",
+          "code": 800,
+          "temperature": 1,
+          "windSpeed": 12,
+          "windDirection": 34,
+          "pressure": 1111,
+          "date": "2022-09-11T17:40:22.752Z"
+        }
+      ],
+      "lastReading": {
+        "id": "cfdf4600-31f8-11ed-b265-43c1ba8087e7",
+        "code": 800,
+        "temperature": 1,
+        "windSpeed": 12,
+        "windDirection": 34,
+        "pressure": 1111,
+        "date": "2022-09-11T17:40:22.752Z"
+      },
+      "code": 800,
+      "currentWeather": "Thunder",
+      "weatherIcons": "poo storm icon",
+      "tempC": 1,
+      "tempF": 33.8,
+      "maxTemp": 1,
+      "minTemp": 1,
+      "tempTrend": null,
+      "windBft": 3,
+      "windCompass": "East North East",
+      "windChill": -3,
+      "maxWind": 12,
+      "minWind": 12,
+      "windTrend": null,
+      "pressure": 1111,
+      "maxPressure": 1111,
+      "minPressure": 1111,
+      "pressureTrend": null
+    },
+    {
+      "id": "7e4acfe0-2eaf-11ed-9b61-895878c90fae",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "marge station",
+      "lat": "",
+      "lng": "",
+      "readings": [
+        {
+          "id": "2ee96f10-2ed7-11ed-bbdb-5704e6abf6fe",
+          "code": 700,
+          "temperature": -1,
+          "windSpeed": 12,
+          "windDirection": 55,
+          "pressure": 1111,
+          "date": "2022-09-07T18:02:05.825Z"
+        },
+        {
+          "id": "ee0ae8e0-31fe-11ed-95d5-5920b316d4fe",
+          "code": 700,
+          "temperature": -5,
+          "windSpeed": 10,
+          "windDirection": 234,
+          "pressure": 1112,
+          "date": "2022-09-11T18:24:10.350Z"
+        },
+        {
+          "id": "ff2655b0-31fe-11ed-95d5-5920b316d4fe",
+          "code": 300,
+          "temperature": -6,
+          "windSpeed": 9,
+          "windDirection": 100,
+          "pressure": 1113,
+          "date": "2022-09-11T18:24:39.051Z"
+        }
+      ],
+      "lastReading": {
+        "id": "ff2655b0-31fe-11ed-95d5-5920b316d4fe",
+        "code": 300,
+        "temperature": -6,
+        "windSpeed": 9,
+        "windDirection": 100,
+        "pressure": 1113,
+        "date": "2022-09-11T18:24:39.051Z"
+      },
+      "code": 300,
+      "currentWeather": "Cloudy",
+      "weatherIcons": "cloud icon",
+      "tempC": -6,
+      "tempF": 21.2,
+      "maxTemp": -1,
+      "minTemp": -6,
+      "windBft": 2,
+      "windCompass": "East South East",
+      "windChill": -10,
+      "maxWind": 12,
+      "minWind": 9,
+      "pressure": 1113,
+      "maxPressure": 1113,
+      "minPressure": 1111,
+      "tempTrend": "right floated big arrow down icon",
+      "windTrend": "right floated big arrow down icon",
+      "pressureTrend": "right floated big arrow up icon"
     }
   ]
 }
